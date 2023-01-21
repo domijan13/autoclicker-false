@@ -1,0 +1,11 @@
+getgenv().autoclicker = true; -- if its true it will loop the script and if its false it will stop the loop
+
+while wait() do
+	if getgenv().autoclicker == true then
+		local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage").StrongMan_UpgradeStrength:InvokeServer(unpack(args)) -- paste here the script/remote script that you wanna make loop
+	end
+end
